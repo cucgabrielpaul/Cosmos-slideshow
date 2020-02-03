@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+div.wrapper nav {
+  display: flex;
+  background: url(img/nav.gif);
+  align-items: center;
+}
+div.wrapper nav a:hover,
+div.wrapper nav a:visited,
+div.wrapper nav a:link,
+div.wrapper nav a:active {
+  color: white;
+  text-decoration: none;
+}
+div.wrapper nav a.banner {
+  font-size: 36px;
+  letter-spacing: -2px;
+  padding: 10px 0;
+  margin-left: 24px;
+  margin-right: 122px;
+}
+div.wrapper nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 306px;
+}
+div.wrapper nav ul li:nth-child(2) {
+  margin-left: 5px;
+}
+div.wrapper nav ul li {
+  list-style-type: none;
+}
+div.wrapper nav ul li a {
+  padding: 16px 0;
+  font-size: 16px;
+  letter-spacing: -1px;
+  font-family: "Arial";
+  font-weight: bold;
+}
+div.wrapper nav ul li a:hover {
+  color: #ffce22;
+}
+div.wrapper main button {
+  font-weight: bold;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+}
+div.wrapper main div.slideshow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 70px 0 50px 0;
+}
+div.wrapper main div.slideshow div.myslides {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+div.wrapper main div.slideshow div.myslides div.imgtext h3 {
+  position: absolute;
+  color: white;
+  margin: 14px 0 0 14px;
+}
+div.wrapper main div.slideshow div.myslides div.imgtext img {
+  width: 736px;
+  height: 414px;
+}
+div.wrapper main div.slideshow div.myslides div.container {
+  margin: 14px 0 14px 40px;
+  width: 260px;
+  height: 414px;
+  border: 9px solid #8f8ec7;
+  position: relative;
+}
+div.wrapper main div.slideshow div.myslides div.container div.details {
+  margin: 14px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.details p:first-child {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.details p:last-child {
+  line-height: 20px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.price {
+  background: #6362a7;
+}
+div.wrapper main div.slideshow div.myslides div.container div.price p {
+  color: white;
+  margin-left: 12px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.price p:first-child {
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 12px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.price button.buybutton {
+  background: #ffce22;
+  color: #333333;
+  font-size: 22px;
+  border-radius: 3px;
+  width: 113px;
+  height: 39px;
+  margin: 14px 0 16px 120px;
+}
+div.wrapper main div.slideshow div.myslides div.container div.price button.buybutton:hover {
+  background-color: #8f8ec7;
+  color: white;
+}
+div.wrapper main div.slideshow div.myslides div.container:after,
+div.wrapper main div.slideshow div.myslides div.container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+div.wrapper main div.slideshow div.myslides div.container:after {
+  border-color: transparent white transparent transparent;
+  border-width: 18px;
+}
+div.wrapper main div.slideshow div.myslides div.container:before {
+  border-color: transparent #8f8ec7 transparent transparent;
+  border-width: 28px;
+}
+div.wrapper main div.slideshow button.buttonright,
+div.wrapper main div.slideshow button.buttonleft {
+  border-radius: 50%;
+  background: #6362a7;
+  padding: 0;
+  color: white;
+  width: 92px;
+  height: 92px;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+div.wrapper main div.slideshow button.buttonright:hover,
+div.wrapper main div.slideshow button.buttonleft:hover {
+  background-color: #8f8ec7;
+}
+div.wrapper main div.icons {
+  display: flex;
+  position: relative;
+  background: #6362a7;
+  justify-content: space-evenly;
+  padding: 48px 20%;
+}
+div.wrapper main div.icons svg {
+  width: 100px;
+  height: 120px;
+}
+div.wrapper main div.icons p {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+div.wrapper main div.icons div.pack {
+  margin-left: 20px;
+}
+div.wrapper main div.icons div.pack #XMLID_8_ {
+  fill: #f5b944;
+}
+div.wrapper main div.icons div.fly {
+  margin-left: 24px;
+  margin-right: 10px;
+}
+div.wrapper main div.icons div.fly #XMLID_6_ {
+  fill: #6af1d0;
+}
+div.wrapper main div.icons div.live #XMLID_2_ {
+  fill: #c6f16a;
+}
+div.wrapper main article h1 {
+  background: #8f8ec7;
+  padding: 21.5px 11.9%;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  color: white;
+}
+div.wrapper main article p {
+  padding: 0 11.9%;
+  letter-spacing: 0.4px;
+  max-width: 1030px;
+  line-height: 25px;
+}
+div.wrapper main article p:first-of-type {
+  margin-top: 72px;
+}
+div.wrapper main article p:last-of-type {
+  margin-top: 28px;
+  margin-bottom: 68px;
+}
+div.wrapper main article button.orderbutton {
+  width: 236px;
+  height: 67px;
+  border-radius: 3px;
+  background: #ffce22;
+  color: #333333;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+  margin-left: 11.9%;
+  text-align: center;
+  vertical-align: middle;
+}
+div.wrapper main article button.orderbutton:hover {
+  background-color: #8f8ec7;
+  color: white;
+}
+div.wrapper footer {
+  display: flex;
+  margin-top: 84px;
+  align-items: center;
+  height: 83px;
+  background: #333333;
+}
+div.wrapper footer span {
+  color: white;
+  font-size: 13px;
+  margin-left: 22px;
+}
+
+@media screen and (max-width: 530px) {
+  div.slideshow div.myslides {
+    justify-content: center;
+  }
+  div.slideshow div.myslides div.container {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  button#rightbtn,
+button#leftbtn {
+    background: none;
+  }
+
+  button.buttonright,
+button.buttonleft {
+    position: relative;
+  }
+
+  button.buttonright {
+    right: 8%;
+  }
+
+  button.buttonleft {
+    left: 8%;
+    z-index: 2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
