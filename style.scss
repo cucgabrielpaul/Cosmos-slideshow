@@ -66,6 +66,24 @@ div.wrapper {
       align-items: center;
       padding: 70px 0 50px 0;
 
+      button.buttonright,
+      button.buttonleft {
+        display: inline-block;
+        border-radius: 50%;
+        background: $mauve;
+        padding: 0;
+        color: white;
+        width: 92px;
+        height: 92px;
+        font-size: 32px;
+        line-height: 1px;
+        text-align: center;
+      }
+      button.buttonright:hover,
+      button.buttonleft:hover {
+        background-color: $lightmauve;
+      }
+
       div.myslides {
         display: flex;
         position: relative;
@@ -151,22 +169,6 @@ div.wrapper {
           border-color: transparent $lightmauve transparent transparent;
           border-width: 28px;
         }
-      }
-      button.buttonright,
-      button.buttonleft {
-        border-radius: 50%;
-        background: $mauve;
-        padding: 0;
-        color: white;
-        width: 92px;
-        height: 92px;
-        font-size: 32px;
-        text-align: center;
-        vertical-align: middle;
-      }
-      button.buttonright:hover,
-      button.buttonleft:hover {
-        background-color: $lightmauve;
       }
     }
 
@@ -265,32 +267,72 @@ div.wrapper {
   }
 }
 
-@media screen and (max-width: 530px) {
-  div.slideshow {
-    div.myslides {
-      justify-content: center;
-
-      div.container {
-        display: none;
+@media screen and (max-width: 1230px) {
+  div.wrapper {
+    main {
+      div.slideshow {
+        button#rightbtn,
+        button#leftbtn {
+          background: none;
+          width: 20px;
+          height: 20px;
+        }
+        button.buttonright,
+        button.buttonleft {
+          position: relative;
+        }
+        button.buttonright {
+          right: 12%;
+        }
+        button.buttonleft {
+          left: 12%;
+          z-index: 2;
+        }
+        div.myslides {
+          justify-content: center;
+          div.container {
+            display: none;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 400px) {
-  button#rightbtn,
-  button#leftbtn {
-    background: none;
-  }
-  button.buttonright,
-  button.buttonleft {
-    position: relative;
-  }
-  button.buttonright {
-    right: 8%;
-  }
-  button.buttonleft {
-    left: 8%;
-    z-index: 2;
+@media screen and (max-width: 768px) {
+  div.wrapper {
+    nav {
+      a.banner {
+        margin: 0 10px;
+        font-size: 16px;
+      }
+      ul {
+        justify-content: space-evenly;
+      }
+    }
+    main {
+      div.slideshow {
+        div.myslides {
+          div.imgtext {
+            width: 99% !important;
+
+            img {
+              width: 100% !important;
+              height: 300px !important;
+            }
+          }
+        }
+      }
+
+      div.icons {
+        svg {
+          width: 70px;
+          height: 85px;
+        }
+        div.live {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
