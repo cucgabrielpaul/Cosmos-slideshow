@@ -273,6 +273,9 @@ div.wrapper main div.slideshow button.buttonleft {
   div.wrapper nav ul {
     justify-content: space-evenly;
   }
+  div.wrapper nav ul li a {
+    padding: 6px 0;
+  }
   div.wrapper main div.slideshow div.myslides div.imgtext {
     width: 99% !important;
   }

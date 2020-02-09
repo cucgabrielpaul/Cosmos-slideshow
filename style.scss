@@ -308,6 +308,11 @@ div.wrapper {
       }
       ul {
         justify-content: space-evenly;
+        li {
+          a {
+            padding: 6px 0;
+          }
+        }
       }
     }
     main {
