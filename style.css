@@ -24,7 +24,7 @@ div.wrapper nav a:active {
 div.wrapper nav a.banner {
   font-size: 36px;
   letter-spacing: -2px;
-  padding: 10px 0;
+  padding: 10px 0 8px;
   margin-left: 24px;
   margin-right: 122px;
 }
@@ -59,14 +59,14 @@ div.wrapper main div.slideshow {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 70px 0 50px 0;
+  padding: 82.5px 0 60px 0;
 }
 div.wrapper main div.slideshow button.buttonright,
 div.wrapper main div.slideshow button.buttonleft {
   display: inline-block;
   border-radius: 50%;
   background: #6362a7;
-  padding: 0;
+  margin-bottom: 10px;
   color: white;
   width: 92px;
   height: 92px;
@@ -81,26 +81,26 @@ div.wrapper main div.slideshow button.buttonleft:hover {
 div.wrapper main div.slideshow div.myslides {
   display: flex;
   position: relative;
-  align-items: center;
+  margin: 0 12px;
 }
 div.wrapper main div.slideshow div.myslides div.imgtext h3 {
   position: absolute;
   color: white;
-  margin: 14px 0 0 14px;
+  margin: 15px 0 0 12px;
 }
 div.wrapper main div.slideshow div.myslides div.imgtext img {
   width: 736px;
   height: 414px;
 }
 div.wrapper main div.slideshow div.myslides div.container {
-  margin: 14px 0 14px 40px;
+  margin-left: 40px;
   width: 260px;
   height: 414px;
-  border: 9px solid #8f8ec7;
+  border: 8px solid #8f8ec7;
   position: relative;
 }
 div.wrapper main div.slideshow div.myslides div.container div.details {
-  margin: 14px;
+  margin: 16px 14px;
 }
 div.wrapper main div.slideshow div.myslides div.container div.details p:first-child {
   font-size: 28px;
@@ -108,6 +108,8 @@ div.wrapper main div.slideshow div.myslides div.container div.details p:first-ch
   letter-spacing: 1px;
 }
 div.wrapper main div.slideshow div.myslides div.container div.details p:last-child {
+  margin-top: -8px;
+  margin-bottom: 20px;
   line-height: 20px;
 }
 div.wrapper main div.slideshow div.myslides div.container div.price {
@@ -121,7 +123,7 @@ div.wrapper main div.slideshow div.myslides div.container div.price p:first-chil
   font-size: 38px;
   font-weight: bold;
   letter-spacing: 0.5px;
-  padding-top: 12px;
+  padding-top: 13px;
 }
 div.wrapper main div.slideshow div.myslides div.container div.price button.buybutton {
   background: #ffce22;
@@ -130,7 +132,7 @@ div.wrapper main div.slideshow div.myslides div.container div.price button.buybu
   border-radius: 3px;
   width: 113px;
   height: 39px;
-  margin: 14px 0 16px 120px;
+  margin: 12px 0 16px 120px;
 }
 div.wrapper main div.slideshow div.myslides div.container div.price button.buybutton:hover {
   background-color: #8f8ec7;
@@ -158,14 +160,14 @@ div.wrapper main div.slideshow div.myslides div.container:before {
 }
 div.wrapper main div.icons {
   display: flex;
-  position: relative;
   background: #6362a7;
-  justify-content: space-evenly;
-  padding: 48px 20%;
+  justify-content: space-between;
+  padding: 2px 0 54px;
 }
-div.wrapper main div.icons svg {
-  width: 100px;
-  height: 120px;
+div.wrapper main div.icons img {
+  width: 160px;
+  height: 160px;
+  font-weight: 150px;
 }
 div.wrapper main div.icons p {
   color: white;
@@ -175,24 +177,29 @@ div.wrapper main div.icons p {
   letter-spacing: 1px;
 }
 div.wrapper main div.icons div.pack {
-  margin-left: 20px;
+  margin-left: 28%;
 }
-div.wrapper main div.icons div.pack #XMLID_8_ {
-  fill: #f5b944;
+div.wrapper main div.icons div.pack img {
+  margin: 13px 0 -13px;
 }
 div.wrapper main div.icons div.fly {
-  margin-left: 24px;
-  margin-right: 10px;
+  margin-left: 22px;
 }
-div.wrapper main div.icons div.fly #XMLID_6_ {
-  fill: #6af1d0;
+div.wrapper main div.icons div.fly img {
+  margin: 16px 0 -15px;
 }
-div.wrapper main div.icons div.live #XMLID_2_ {
-  fill: #c6f16a;
+div.wrapper main div.icons div.live {
+  margin-right: 27%;
+}
+div.wrapper main div.icons div.live img {
+  margin: 16px 0 -13px;
+}
+div.wrapper main div.icons div.live p {
+  margin-left: 14px;
 }
 div.wrapper main article h1 {
   background: #8f8ec7;
-  padding: 21.5px 11.9%;
+  padding: 21.5px 11.75%;
   font-size: 35px;
   letter-spacing: 1.5px;
   color: white;
@@ -207,8 +214,8 @@ div.wrapper main article p:first-of-type {
   margin-top: 72px;
 }
 div.wrapper main article p:last-of-type {
-  margin-top: 28px;
-  margin-bottom: 68px;
+  margin-top: 26px;
+  margin-bottom: 60px;
 }
 div.wrapper main article button.orderbutton {
   width: 236px;
@@ -218,10 +225,9 @@ div.wrapper main article button.orderbutton {
   color: #333333;
   font-size: 22px;
   font-weight: bold;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.6px;
   margin-left: 11.9%;
   text-align: center;
-  vertical-align: middle;
 }
 div.wrapper main article button.orderbutton:hover {
   background-color: #8f8ec7;
@@ -229,7 +235,7 @@ div.wrapper main article button.orderbutton:hover {
 }
 div.wrapper footer {
   display: flex;
-  margin-top: 84px;
+  margin-top: 85px;
   align-items: center;
   height: 83px;
   background: #333333;
@@ -237,7 +243,8 @@ div.wrapper footer {
 div.wrapper footer span {
   color: white;
   font-size: 13px;
-  margin-left: 22px;
+  letter-spacing: -0.2px;
+  margin-left: 25px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -264,6 +271,17 @@ div.wrapper main div.slideshow button.buttonleft {
   div.wrapper main div.slideshow div.myslides div.container {
     display: none;
   }
+  div.wrapper main div.icons {
+    justify-content: space-evenly;
+  }
+  div.wrapper main div.icons div {
+    margin: 0;
+    padding: 0;
+  }
+  div.wrapper main div.icons div img {
+    width: 90px;
+    height: 90px;
+  }
 }
 @media screen and (max-width: 768px) {
   div.wrapper nav a.banner {
@@ -282,13 +300,6 @@ div.wrapper main div.slideshow button.buttonleft {
   div.wrapper main div.slideshow div.myslides div.imgtext img {
     width: 100% !important;
     height: 300px !important;
-  }
-  div.wrapper main div.icons svg {
-    width: 70px;
-    height: 85px;
-  }
-  div.wrapper main div.icons div.live {
-    margin-left: 10px;
   }
 }
 
